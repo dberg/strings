@@ -9,7 +9,7 @@ Notes:
 
 ## Setup and running tests
 
-Make sure you have [sbt](http://www.scala-sbt.org) installed.
+Make sure you have [sbt](https://www.scala-sbt.org) installed.
 
 To compile the code and run the tests execute:
 
