@@ -7,17 +7,17 @@ public class ZAlgorithm {
         int r = 0; // z-box right
 
         for (int i = ini; i <= end; i++) {
-            if (i > r) {
+            if (i > r) { // try to find a new box z-box
                 l = r = i;
                 while (r <= end && s[r] == s[r - l]) r++;
                 z[i] = r - l;
                 r--;
-            } else {
+            } else { // inside a z-box
                 int k = i - l;
                 if (z[k] < (r - i + 1)) {
                     z[i] = z[k];
                 } else {
-                    l = i;
+                    l = i; // calculate new z-box
                     while (r <= end && s[r] == s[r - l]) r++;
                     z[i] = r - l;
                     r--;
