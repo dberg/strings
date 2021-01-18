@@ -9,12 +9,12 @@ class ZAlgorithmSpec extends AnyFlatSpec with should.Matchers with Tests {
 
   "The ZAlgorithm" should "match substrings" in {
     tests.foreach { case (pattern, text, result) =>
-      ZAlgorithm.issubstring(pattern, text) should be (result)
+      ZAlgorithm.issubstring(pattern, text) should be (result.asJava)
     }
   }
 
   "The ZAlgorithmV2" should "find indices of substrings" in {
-    testsIndices.foreach { case (pattern, text, result) =>
+    tests.foreach { case (pattern, text, result) =>
       ZAlgorithmV2.substrings(pattern, text) should be (result.asJava)
     }
   }
