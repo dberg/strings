@@ -4,8 +4,8 @@ Java implementation of the z-algorithm and the bad-character-rule.
 
 Notes:
 
-1. [z-algorithm](http://daniberg.com/2017/06/16/z-algorithm.html)
-2. [bad-character-rule](http://daniberg.com/2017/05/31/bad-character-rule.html)
+1. [z-algorithm](http://daniberg.com/posts/2017-06-16-z-algorithm/)
+2. [bad-character-rule](http://daniberg.com/posts/2017-05-31-bad-character-rule/)
 
 ## Setup and running tests
 
